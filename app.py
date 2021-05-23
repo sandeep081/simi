@@ -7,7 +7,7 @@ import pandas as pd
 
 st.set_option('deprecation.showfileUploaderEncoding', False)
 # Load the pickled model
-model = pickle.load(open('kmeansclusterassignment.pkl', 'rb'))
+model = pickle.load(open('kmeansclusterassignment (1).pkl', 'rb'))
 dataset = pd.read_csv('Wholesale customers data.csv')
 X = dataset.iloc[:, 2:].values
 from sklearn.preprocessing import StandardScaler
